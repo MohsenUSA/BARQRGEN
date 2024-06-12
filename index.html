@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode and QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" id="inputValue" placeholder="Enter text" autocomplete="off" />
+        </div>
+        <button id="clearButton" disabled>Clear</button>
+
+        <select id="typeSelect">
+            <option value="barcode">Barcode</option>
+            <option value="qr">QR Code</option>
+        </select>
+
+        <button id="generateButton">Generate</button>
+
+        <div id="generatedCodeContainer"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

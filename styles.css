@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase; /* Make input text all caps */
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#generateButton {
+    width: 50%;
+}
+
+#clearButton {
+    background-color: red;
+    width: 50%;
+}
+
+select {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+#generatedCodeContainer {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
